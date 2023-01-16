@@ -64,7 +64,7 @@ bool parse(Param* param, int argc, char* argv[]) {
         if(buf[strlen(buf) - 1] == '\n') buf[strlen(buf) - 1] =  0;
         param->ssid_list.push_back(buf);
     }
-
+	fclose(fp);	
 	return true;
 }
 
